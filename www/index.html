@@ -31,6 +31,7 @@
 */
 </style>
 <h1>term.js</h1>
+<div id="term" ></div>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" ></script>
 <script src="/socket.io/socket.io.js"></script>
 <script src="term.js"></script>
@@ -57,7 +58,7 @@ $(function() {
         document.title = title;
       });
 
-      term.open(document.body);
+      term.open(document.getElementById('term'));
 
       term.write('\x1b[31mWelcome to term.js!\x1b[m\r\n');
 
